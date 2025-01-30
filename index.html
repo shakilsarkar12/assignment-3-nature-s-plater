@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- tailwind and daisyUI CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!--icon link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <style>
+        .font-sora{
+            font-family: "Sora", serif;
+        }
+
+        .font-poppins{
+            font-family: "Poppins", serif;
+        }
+
+    </style>
+
+    <title>Nuture's Platter</title>
+</head>
+
+<body class="font-sora overflow-x-hidden">
+    <!-- header  -->
+<header class=" bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] w-[100vw]">
+    <!-- navbar -->
+    <nav class="text-xl flex items-center justify-between py-3 sm:mt-3 md:mt-4 border-[#8fc984da] border-b-[1px] md:border-none px-4 sm:px-10 lg:px-36">
+        <!-- logo -->
+        <div class="">
+            <img class="w-32 hidden sm:block" src="assets/logo-header.png" alt="Logo">
+            <img class="w-12 sm:hidden" src="assets/mobile-logo.png" alt="Logo">
+        </div>
+
+        <!-- navlinks -->
+        <ul class="hidden md:flex items-center justify-center gap-4">
+            <li><a href="">Product</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact us</a></li>
+        </ul>
+
+        <!-- icon adn button -->
+        <div class="hidden md:flex items-center justify-center gap-4">
+            <!-- icon -->
+             <div class="flex items-center justify-center gap-4 text-2xl">
+                <i class="ri-search-line"></i>
+                <i class="ri-shopping-cart-2-line"></i>
+             </div>
+             <!-- button -->
+             <div class="flex items-center justify-center gap-4">
+                <button class="border-[1px] rounded-lg border-[#179800] py-1 px-6 text-black">Login</button>
+                <button class="border-[1px] rounded-lg border-[#179800] bg-[#179800] py-1 px-6 text-white">Register</button>
+             </div>
+        </div>
+
+        <!-- ha,barger menu -->
+         <div class="md:hidden text-3xl text-[#179800]">
+            <i class="ri-menu-line"></i>
+         </div>
+
+    </nav>
+    <!-- hero section -->
+     <div class="text-center mt-6 px-4 sm:px-10 lg:px-36">
+        <!-- hero content -->
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-bold text-3xl md:text-6xl mb-4 md:mb-8">Freshness <span class="text-[#179800]">You Can <br> Count</span> On, Prices You’ll Love!</h2>
+            <p class="text-base md:text-xl mb-5 md:mb-9 text-[#545250]">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples we’ve got you covered every day!</p>
+        </div>
+
+        <!-- hero image -->
+        <div class="max-w-3xl mx-auto">
+            <img class="mx-auto" src="assets/hero-vegetables.png" alt="">
+        </div>
+     </div>
+
+</header>
+<!-- main -->
+<main class="max-w-screen-xl mx-auto px-4 md:px-8">
+    <!-- Service section -->
+    <section class="my-10 md:my-14">
+        <h2 class="text-[#179800] font-semibold text-2xl md:text-4xl mb-5 md:mb-8">Services</h2>
+        <!-- card container -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- card 1 -->
+            <div class="bg-[#EFEBE3] rounded-lg p-8 text-center">
+                <!-- card img -->
+                <div class="bg-white h-24 w-24 md:w-28 md:h-28 rounded-full p-4 mx-auto mb-4">
+                    <img src="assets/service.png" alt="service">
+                </div>
+                <!-- card content  -->
+                <div>
+                    <h3 class="text-xl md:text-2xl font-semibold to-black mb-4">24/7 Services </h3>
+                    <p class="text-base text-[#545250]">Always available to assist you anytime, ensuring round-the-clock support and reliability.</p>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="bg-[#EFEBE3] rounded-lg p-8 text-center">
+                <!-- card img -->
+                <div class="bg-white h-24 w-24 md:w-28 md:h-28 rounded-full p-4 mx-auto mb-4">
+                    <img src="assets/delivery.png" alt="delivery">
+                </div>
+                <!-- card content  -->
+                <div>
+                    <h3 class="text-xl md:text-2xl font-semibold to-black mb-4">Fast Delivery</h3>
+                    <p class="text-base text-[#545250]"> Swift and timely delivery to your doorstep, ensuring your satisfaction without delays.</p>
+                </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="bg-[#EFEBE3] rounded-lg p-8 text-center">
+                <!-- card img -->
+                <div class="bg-white h-24 w-24 md:w-28 md:h-28 rounded-full p-4 mx-auto mb-4">
+                    <img class="mt-1" src="assets/healthy.png" alt="healthy">
+                </div>
+                <!-- card content  -->
+                <div>
+                    <h3 class="text-xl md:text-2xl font-semibold to-black mb-4">Healthy Products </h3>
+                    <p class="text-base text-[#545250]"> Offering 100% eco-friendly and organic products for a healthier and sustainable lifestyle.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Popular Products -->
+    <section class="my-10 md:my-14">
+        <h2 class="text-[#179800] font-semibold text-2xl md:text-4xl mb-5 md:mb-8">Popular Products</h2>
+        <!-- card container -->
+        <div>
+            <!-- offer card -->
+            <div>
+                
+            </div>
+            <div></div>
+        </div>
+    </section>
+</main>
+<!-- footer -->
+<footer>
+
+</footer>
+</body>
+
+</html>
